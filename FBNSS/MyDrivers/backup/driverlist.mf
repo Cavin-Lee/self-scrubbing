@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<drivers>
+<item>
+<devicename><![CDATA[Intel(R) Dual Band Wireless-AC 3165]]></devicename>
+<deviceclass><![CDATA[Net]]></deviceclass>
+<inf><![CDATA[netwbw02.inf]]></inf>
+<deviceids><![CDATA[PCI\VEN_8086&DEV_3165&SUBSYS_44108086&REV_79]]></deviceids>
+<os>101</os>
+<filename><![CDATA[Intel(R) Dual Band Wireless-AC 3165]]></filename>
+<version><![CDATA[17.15.0.5]]></version>
+<driverdate><![CDATA[2015-2-22]]></driverdate>
+</item>
+</drivers>
