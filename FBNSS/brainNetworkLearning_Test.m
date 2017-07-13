@@ -21,13 +21,13 @@ if label==1
     opts=[];
     opts.init=2;% Starting point: starting from a zero point here
     opts.tFlag=0;% termination criterion
-    % abs( funVal(i)- funVal(i-1) ) กÜ .tol=10e?4 (default)
+    % abs( funVal(i)- funVal(i-1) ) ยกร .tol=10e?4 (default)
     %For the tFlag parameter which has 6 different termination criterion.
-    % 0 ? abs( funVal(i)- funVal(i-1) ) กÜ .tol.
-    % 1 ? abs( funVal(i)- funVal(i-1) ) กÜ .tol กม max(funVal(i),1).
-    % 2 ? funVal(i) กÜ .tol.
-    % 3 ? kxi ? xi?1k2 กÜ .tol.
-    % 4 ? kxi ? xi?1k2 กÜ .tol กม max(||xi||_2, 1).
+    % 0 ? abs( funVal(i)- funVal(i-1) ) ยกร .tol.
+    % 1 ? abs( funVal(i)- funVal(i-1) ) ยกร .tol ยกร max(funVal(i),1).
+    % 2 ? funVal(i) ยกร .tol.
+    % 3 ? kxi ? xi?1k2 ยกร .tol.
+    % 4 ? kxi ? xi?1k2 ยกร .tol ยกร max(||xi||_2, 1).
     % 5 ? Run the code for .maxIter iterations.
     opts.nFlag=0;% normalization option: 0-without normalization
     opts.rFlag=0;% regularization % the input parameter 'rho' is a ratio in (0, 1)
@@ -58,7 +58,7 @@ if label==1
     save('brainNetSet_SR_UNC.mat','brainNetSet','lab','-v7.3');
 end
 
-if label==3
+if label==2
     lambda=[5 10 15 20 15 30 35 40 45 50 55  60 65 70 75 80 85 90 95 99 99.2 99.5 99.9]; % the values lies in [0,100] denoting the sparsity degree
     
     disp('Press any key:'); pause;

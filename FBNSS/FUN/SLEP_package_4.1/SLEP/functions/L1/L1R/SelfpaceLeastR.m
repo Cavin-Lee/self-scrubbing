@@ -67,7 +67,7 @@ while abs((J_old-J_new)/J_old)>epsilon %end condition
     Q_val=(sum(abs(v)));
     J_new = diag(v)*norm(data-data*W_tmp,'fro')^2+lambda*S_val-gamma*Q_val;
     
-    error=abs(sum(((data-data*W_tmp))'))'.^2;
+    error=abs(sum(((data-data*W_tmp))'))';
   
     [d c]=kmeans(error,2);
    

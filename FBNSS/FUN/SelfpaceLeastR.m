@@ -12,8 +12,7 @@ function W = SelfpaceLeastR(data,lambda,gamma)
 %
 %% Input parameters:
 %
-%  data-         Matrix of size m x n
-%                data can be a dense matrix
+%  data-         Matrix of size m x n%                data can be a dense matrix
 %                         a sparse matrix
 %                         or a DCT matrix
 %  label -        Response vector (of size mx1)
@@ -23,8 +22,7 @@ function W = SelfpaceLeastR(data,lambda,gamma)
 %% Output parameters:
 %  W-         Solution
 %
-%% Copyright WeikaiLi@cqjtu  email :leeweikai@outlook.com
-%
+%% Copyright WeikaiLi@cqjtu  email :leeweikai@outlook.com%
 [sample,nROI]=size(data);
 
 v=ones(1,sample);
@@ -67,7 +65,7 @@ while abs((J_old-J_new)/J_old)>epsilon %end condition
     Q_val=(sum(abs(v)));
     J_new = diag(v)*norm(data-data*W_tmp,'fro')^2+lambda*S_val-gamma*Q_val;
     
-    error=abs(sum(((data-data*W_tmp))'))'.^2;
+    error=abs(sum(((data-data*W_tmp))'))';
   
     [d c]=kmeans(error,2);
    
