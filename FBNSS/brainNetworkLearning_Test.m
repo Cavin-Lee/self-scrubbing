@@ -55,7 +55,7 @@ if label==1
         brainNetSet{L}=brainNet;
         fprintf('Done %d/%d networks!\n',L,nPar);
     end
-    save('brainNetSet_SR_UNC.mat','brainNetSet','lab','-v7.3');
+    save('brainNetSet_SR_NITRC.mat','brainNetSet','lab','-v7.3');
 end
 
 if label==2
@@ -76,7 +76,7 @@ if label==2
         brainNetSet{L}=brainNet;
         fprintf('Done %d/%d networks!\n',L,nPar);
     end
-    save('brainNetSet_PC_UNC.mat','brainNetSet','lab');
+    save('brainNetSet_PC_NITRC.mat','brainNetSet','lab');
 end
 
 if label==3
@@ -106,5 +106,5 @@ if label==3
             fprintf('Done lambda=%d gamma=%d networks!\n',iL,iZ);
         end
     end
-    save('brainNetSet_SPLPCSR_UNC.mat','brainNetSet','lab','-v7.3');
+    save('brainNetSet_SPLSR_NITRC.mat','brainNetSet','lab','-v7.3');
 end
