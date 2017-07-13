@@ -74,7 +74,7 @@ while abs((J_old-J_new)/J_old)>epsilon %end condition
     num=length(index);
     sorterror=sort(error(index));
     threshold=sorterror(ceil(num*gamma));
-    v=v.*(error'<threshold);%updata V
+    v=(error'<threshold);%updata V
   
     Iter=Iter+1;
     
